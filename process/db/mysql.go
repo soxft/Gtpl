@@ -7,6 +7,7 @@ import (
 	"gorm.io/gorm"
 	"gtpl/app/model"
 	"gtpl/library/zag"
+	"moul.io/zapgorm2"
 	"time"
 )
 
@@ -17,12 +18,12 @@ func Init() {
 
 	dsn := fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=%s", viper.GetString("MYSQL_USERNAME"), viper.GetString("MYSQL_PASSWORD"), viper.GetString("MYSQL_ADDR"), viper.GetString("MYSQL_DATABASE"), viper.GetString("MYSQL_CHARSET"))
 
-	//logger := zapgorm2.New(zag.Z)
-	//logger.SetAsDefault()
+	logger := zapgorm2.New(zag.Z)
+	logger.SetAsDefault()
 
 	var err error
 	D, err = gorm.Open(mysql.Open(dsn), &gorm.Config{
-		//Logger: logger,
+		Logger: logger,
 	})
 
 	if err != nil {
