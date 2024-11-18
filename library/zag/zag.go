@@ -12,6 +12,7 @@ var Z *zap.Logger
 func Init() {
 	if viper.GetBool("DEBUG") {
 		Z, _ = zap.NewDevelopment()
+
 		Z.Sugar().Info("Running in debug mode")
 	} else {
 		// 不提示 debug
