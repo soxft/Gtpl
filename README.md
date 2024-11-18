@@ -1,5 +1,5 @@
 # Gtpl - Gin template
-[config](config)
+
 Gtpl is a simple and efficient Gin template for quick development.
 
 
