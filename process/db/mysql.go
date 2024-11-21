@@ -2,13 +2,14 @@ package db
 
 import (
 	"fmt"
+	"gtpl/app/model"
+	"gtpl/library/zag"
+	"time"
+
 	"github.com/spf13/viper"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
-	"gtpl/app/model"
-	"gtpl/library/zag"
 	"moul.io/zapgorm2"
-	"time"
 )
 
 var D *gorm.DB

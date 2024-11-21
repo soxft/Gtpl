@@ -2,11 +2,12 @@ package controller
 
 import (
 	"errors"
+	"gtpl/app/model"
+	"gtpl/process/db"
+
 	"github.com/gin-gonic/gin"
 	"github.com/soxft/gokt/gpi"
 	"gorm.io/gorm"
-	"gtpl/app/model"
-	"gtpl/process/db"
 )
 
 func WelcomeIndex(c *gin.Context) {

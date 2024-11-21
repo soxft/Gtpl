@@ -1,9 +1,10 @@
 package api
 
 import (
+	"gtpl/app/controller"
+
 	"github.com/gin-gonic/gin"
 	"github.com/soxft/gokt/gpi"
-	"gtpl/app/controller"
 )
 
 func initRoutes(r *gin.Engine) {

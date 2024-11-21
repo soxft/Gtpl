@@ -2,10 +2,11 @@ package rdb
 
 import (
 	"context"
-	"github.com/redis/go-redis/v9"
-	"github.com/spf13/viper"
 	"gtpl/library/zag"
 	"time"
+
+	"github.com/redis/go-redis/v9"
+	"github.com/spf13/viper"
 )
 
 var R *redis.Client

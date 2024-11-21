@@ -1,14 +1,16 @@
 package api
 
 import (
-	"github.com/gin-contrib/cors"
-	ginzap "github.com/gin-contrib/zap"
-	"github.com/gin-gonic/gin"
 	"gtpl/app/middleware"
 	"gtpl/library/zag"
 
-	"github.com/spf13/viper"
+	"github.com/gin-contrib/cors"
+	ginzap "github.com/gin-contrib/zap"
+	"github.com/gin-gonic/gin"
+
 	"time"
+
+	"github.com/spf13/viper"
 )
 
 // Run api service
